@@ -83,6 +83,24 @@ Generated `__pycache__/` folders and `.pyc` files are omitted from this diagram.
 
 ## What each project file does
 
+The virtual environment stabilizes the Python dependencies, like the set python tookit used everytime the project runs; the persona file defines the character; agent.py handles model generation; osc_bridge.py manages communication and conversation logic; and the service file configures and launches the complete bot process.
+
+```text
+persona_bot_a.md
+        |
+        v
+     agent.py
+personality + model call + memory + output cleaning
+        |
+        v
+   osc_bridge.py
+routing + timing + interruption + system state
+        |
+        v
+ bot_a_service.py
+configuration + startup + terminal controls
+```
+
 ### Root files
 
 | File | Purpose |
